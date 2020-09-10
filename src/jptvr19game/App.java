@@ -1,5 +1,6 @@
 package jptvr19game;
 
+import java.util.Random;
 import java.util.Scanner;
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -21,16 +22,23 @@ public class App
             int myNumber = 2;                    
             Scanner scanner=new Scanner(System.in);
             int gamerNumber = scanner.nextInt();
-            if(myNumber == gamerNumber)
+            
+            Random random=new Random();
+            int numRandom=random.nextInt(3);
+            System.out.println(numRandom);
+            
+            
+            
+            if(myNumber == numRandom)
             {
-            System.out.println("Congradulation you`r win!");
+            System.out.println("Congradulation you`r win! Number actually was "+numRandom);
             }
             else
             {
-                 System.out.println("You`r loose!");
+                 System.out.println("You`r loose! Number was "+numRandom);
             }
             
         }
-   
+
     
 }
