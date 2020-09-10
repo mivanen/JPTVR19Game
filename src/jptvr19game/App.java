@@ -19,26 +19,30 @@ public class App
         {
             System.out.println("Hallo");
             System.out.println("Угадай число:");
-            int myNumber = 2;                    
-            Scanner scanner=new Scanner(System.in);
-            int gamerNumber = scanner.nextInt();
+            //int myNumber = 2;                    
+            
             
             Random random=new Random();
             int numRandom=random.nextInt(3-0+1)+3;
            // random.nextInt(max-min+1)+min;
             
-            System.out.println(numRandom);
-            
-            
-            
-            if(myNumber == numRandom)
+          //  System.out.println(numRandom);
+            for(int i=1;i<=3;i++)
             {
-            System.out.println(":) Congradulation you`r win! Actually number was "+numRandom);
-            }
-            else
-            {
-                 System.out.println(":( You`r loose! Number was "+numRandom);
-            }
+                System.out.println("Попытка нр."+i);
+                Scanner scanner=new Scanner(System.in);
+                int gamerNumber = scanner.nextInt();
+
+                if(gamerNumber == numRandom)
+                {
+                System.out.println(":) Congradulation you`r win! Actually number was "+numRandom);
+                }
+                else
+                {
+                     System.out.println(":( You`r loose! Number was "+numRandom);
+                }
+             }
+       
             
         }
 
