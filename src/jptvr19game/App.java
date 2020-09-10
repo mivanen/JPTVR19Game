@@ -31,11 +31,11 @@ public class App
             
             if(myNumber == numRandom)
             {
-            System.out.println("Congradulation you`r win! Number actually was "+numRandom);
+            System.out.println(":) Congradulation you`r win! Actually number was "+numRandom);
             }
             else
             {
-                 System.out.println("You`r loose! Number was "+numRandom);
+                 System.out.println(":( You`r loose! Number was "+numRandom);
             }
             
         }
