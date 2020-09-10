@@ -24,7 +24,9 @@ public class App
             int gamerNumber = scanner.nextInt();
             
             Random random=new Random();
-            int numRandom=random.nextInt(3);
+            int numRandom=random.nextInt(3-0+1)+3;
+           // random.nextInt(max-min+1)+min;
+            
             System.out.println(numRandom);
             
             
